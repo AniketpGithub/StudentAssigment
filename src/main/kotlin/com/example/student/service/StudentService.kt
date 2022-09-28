@@ -29,6 +29,9 @@ class StudentService(
         return studentRepository.save(student)
     }
 
-    
+    fun deleteStudentById(id: String): Mono<Void>{
+        return studentRepository.deleteById(id)
+
+    }
 
 }
