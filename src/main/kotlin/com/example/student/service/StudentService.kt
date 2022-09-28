@@ -20,4 +20,9 @@ class StudentService(
     fun createStudent(student: Student): Mono<Student> {
         return studentRepository.save(student)
     }
+
+    fun findStudent(id:String ): Mono<Student>{
+        return studentRepository.findById(id)
+    }
+
 }
