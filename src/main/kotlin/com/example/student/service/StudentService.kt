@@ -25,4 +25,8 @@ class StudentService(
         return studentRepository.findById(id)
     }
 
+    fun updateStudentById(id:String, student: Student):Mono<Student>{
+        return studentRepository.save(student)
+    }
+
 }
