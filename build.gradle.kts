@@ -36,6 +36,11 @@ dependencies {
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo")
 	testImplementation("io.projectreactor:reactor-test")
+	implementation("junit:junit:4.13.1")
+	testImplementation("io.kotlintest:kotlintest-runner-junit5:3.4.2")
+	testImplementation ("org.junit.jupiter:junit-jupiter-api:5.7.0")
+	testRuntimeOnly ("org.junit.jupiter:junit-jupiter-engine:5.7.0")
+	testImplementation("io.mockk:mockk:1.10.6")
 }
 
 tasks.withType<KotlinCompile> {
