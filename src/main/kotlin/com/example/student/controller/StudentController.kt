@@ -32,5 +32,8 @@ class StudentController(
         return studentService.updateStudentById(id,student)
     }
 
-    
+    @DeleteMapping("/student/{id}")
+    fun deleteStudent(@PathVariable id: String): Mono<Void> {
+        return studentService.deleteStudentById(id)
+    }
 }
